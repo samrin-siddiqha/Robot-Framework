@@ -24,6 +24,6 @@ ValidateAuthorName
     ${ActualAuthorName}=   get text    xpath://th[@class="infobox-label"]/following-sibling::td[@class="infobox-data"]
 #    Should Be Equal As Strings  ${ExpectedAuthorName}   ${ActualAuthorName}
     run keyword if  '${ExpectedAuthorName}'=='${ActualAuthorName}'  log to console    Author name is matched    ELSE    log to console    Author name is failed, Actual Author name is ${ActualAuthorName}
-#    Close All Browsers
+    Close All Browsers
 
 
